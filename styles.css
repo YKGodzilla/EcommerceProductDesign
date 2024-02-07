@@ -1,0 +1,243 @@
+.gradient-background {
+    background: linear-gradient(300deg,#ff02f7, #02d289);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+body {
+    font-family: "Noto Sans Display", sans-serif;
+}
+
+p, li {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h6 {
+    font-weight: bold;
+}
+
+.navbar {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold !important;
+    height: 80px;
+}
+
+#logo-main {
+    width: 150px;
+}
+
+#logo-2 {
+    width: 100px;
+}
+
+#count {
+    background-color: rgb(214, 214, 214);
+    color: red;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#banner {
+    background-color: #02d289;
+    background-size: cover;
+    border-radius: 10px;
+    width: 80%;
+}
+
+#grey {
+    width: 500px;
+    height: 400px;
+    background-color: rgba(195, 195, 195, 0.248);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(197, 197, 197);
+}
+
+#grey:hover {
+    box-shadow: 0px 0px 10px 2px rgb(197, 197, 197);
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 4px 0px rgb(84, 84, 84);
+}
+
+#main-product {
+    height: 350px;
+}
+
+#number {
+    width: 80px;
+    margin-right: 30px;
+}
+
+#pro-grid {
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: auto;
+    gap: 30px;
+    margin-top: 30px;
+}
+#pro-grid > img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+/* card */
+
+.cards {
+    padding: 100px 0px;
+}
+
+.pro-card {
+    width: 83%;
+    padding: 0px;
+    border: 1px solid #02d289;
+    border-radius: 10px;
+}
+.pro-card:hover {
+    box-shadow: 0px 0px 10px 0px rgb(197, 197, 197);
+}
+
+.pro-card > img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-button {
+    width: 100%;
+    height: 40px;
+    background-color: #02d289;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 0px;
+    color: #152337;
+}
+.card-button:hover {
+    background-color: #152337;
+    color: #02d289;
+}
+
+.card-pad {
+    padding: 15px 15px 20px 15px;
+}
+
+footer svg {
+    color: #243A5A;
+}
+footer svg:hover {
+    color: #02d289;
+}
+
+@media (max-width: 992px) {
+    body {
+        padding: 0px 20px 0px 20px;
+    }
+    p, li {
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+    h1 {
+        font-size: 4.5rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    h6 {
+        font-size: 2.9rem;
+        font-weight: bold;
+    }
+    .navbar {
+        height: 150px;
+        font-size: 2rem;
+    }
+    #logo-main {
+        width: 280px;
+    }
+    #logo-2 {
+        width: 190px;
+    }
+    .navbar-toggler {
+        width: 90px;
+        height: 90px;
+        margin-right: 40px;
+    }
+    .navbar-toggler-icon {
+        width: 70px;
+        height: 70px;
+    }
+    #banner {
+        width: 85%;
+    }
+    #grey {
+        width: 80%;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #main-product {
+        height: 450px;
+    }
+    #pro-grid {
+        grid-template-columns: 160px 160px 160px;
+    }
+    #pro-grid > img {
+        width: 160px;
+        height: 160px;
+    }
+    button, .btn {
+        height: 90px;
+        width: auto;
+        font-size: 2.5rem;
+        border-radius: 15px;
+    }
+    input {
+        font-size: 2.5rem;
+        height: 90px;
+    }
+    .pro-card {
+        width: 80%;
+        margin: 0px auto 100px auto;
+    }
+    .pro-card > img {
+        height: 500px;
+    }
+    h5 {
+        font-size: 2.9rem;
+        font-weight: bold;
+    }
+    .card-button {
+        width: 100%;
+        height: 90px;
+        border-radius: 40px;
+    }
+    .card-pad {
+        padding: 20px 30px 30px 30px;
+    }
+    svg {
+        width: 40px;
+        height: 40px;
+    }
+    #footer-text {
+        font-size: 1.5rem !important;
+    }
+}
